@@ -108,9 +108,10 @@
     
     
 //    [[self.view subviews] makeObjectsPerformSelector:@selector(removeFromSuperview)];
-    [imageview removeFromSuperview];
-    [self.view reloadInputViews];
+   // [imageview removeFromSuperview];
+   // [self.view reloadInputViews];
    // [[self.view subviews] makeObjectsPerformSelector:@selector(removeFromSuperview) withObject:self];
+    
     
     }
 @end
