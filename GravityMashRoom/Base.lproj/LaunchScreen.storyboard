@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8150" systemVersion="15A204g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9046" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8122"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9035"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,13 +16,81 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright © 2016年 Fancy. All rights reserved." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M15-gf-2K3">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="    堆蘑菇" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hax-Jc-ggL">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="3Ah-Hx-Hek"/>
+                                    <constraint firstAttribute="height" constant="84" id="GyR-4b-zlJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="3Ah-Hx-Hek"/>
+                                        <exclude reference="GyR-4b-zlJ"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="3Ah-Hx-Hek"/>
+                                        <include reference="GyR-4b-zlJ"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Hax-Jc-ggL" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="4if-Lg-CzR"/>
+                            <constraint firstItem="M15-gf-2K3" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="8Cs-FG-Rp4"/>
+                            <constraint firstItem="M15-gf-2K3" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="3" id="Agg-lf-dqJ"/>
+                            <constraint firstItem="Hax-Jc-ggL" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="64" id="EHY-mk-FzH"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="M15-gf-2K3" secondAttribute="bottom" constant="101" id="EIW-jS-E68"/>
+                            <constraint firstItem="M15-gf-2K3" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="3" id="UFx-f4-Tqd"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="M15-gf-2K3"/>
+                                <exclude reference="Hax-Jc-ggL"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="4if-Lg-CzR"/>
+                                <exclude reference="EHY-mk-FzH"/>
+                                <exclude reference="8Cs-FG-Rp4"/>
+                                <exclude reference="Agg-lf-dqJ"/>
+                                <exclude reference="UFx-f4-Tqd"/>
+                                <exclude reference="EIW-jS-E68"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="M15-gf-2K3"/>
+                                <include reference="Hax-Jc-ggL"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="4if-Lg-CzR"/>
+                                <include reference="EHY-mk-FzH"/>
+                                <include reference="8Cs-FG-Rp4"/>
+                                <include reference="Agg-lf-dqJ"/>
+                                <include reference="UFx-f4-Tqd"/>
+                                <include reference="EIW-jS-E68"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.5" y="375"/>
         </scene>
     </scenes>
 </document>

@@ -13,6 +13,7 @@
 		B1E1B0251C86CBAC000DE1FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1E1B0231C86CBAC000DE1FA /* Main.storyboard */; };
 		B1E1B0271C86CBAC000DE1FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1E1B0261C86CBAC000DE1FA /* Assets.xcassets */; };
 		B1E1B02A1C86CBAC000DE1FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1E1B0281C86CBAC000DE1FA /* LaunchScreen.storyboard */; };
+		B1E1B0321C86CEC1000DE1FA /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = B1E1B0311C86CEC1000DE1FA /* 1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		B1E1B0261C86CBAC000DE1FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B1E1B0291C86CBAC000DE1FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B1E1B02B1C86CBAC000DE1FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1E1B0311C86CEC1000DE1FA /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			children = (
 				B1E1B01D1C86CBAC000DE1FA /* AppDelegate.h */,
 				B1E1B01E1C86CBAC000DE1FA /* AppDelegate.m */,
+				B1E1B0311C86CEC1000DE1FA /* 1.png */,
 				B1E1B0201C86CBAC000DE1FA /* ViewController.h */,
 				B1E1B0211C86CBAC000DE1FA /* ViewController.m */,
 				B1E1B0231C86CBAC000DE1FA /* Main.storyboard */,
@@ -137,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1E1B02A1C86CBAC000DE1FA /* LaunchScreen.storyboard in Resources */,
+				B1E1B0321C86CEC1000DE1FA /* 1.png in Resources */,
 				B1E1B0271C86CBAC000DE1FA /* Assets.xcassets in Resources */,
 				B1E1B0251C86CBAC000DE1FA /* Main.storyboard in Resources */,
 			);
