@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9046" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9035"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -21,7 +22,7 @@
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="    堆蘑菇" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hax-Jc-ggL">
@@ -32,7 +33,7 @@
                                     <constraint firstAttribute="height" constant="84" id="GyR-4b-zlJ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -64,12 +65,12 @@
                                 <exclude reference="Hax-Jc-ggL"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="EIW-jS-E68"/>
                                 <exclude reference="4if-Lg-CzR"/>
                                 <exclude reference="EHY-mk-FzH"/>
                                 <exclude reference="8Cs-FG-Rp4"/>
                                 <exclude reference="Agg-lf-dqJ"/>
                                 <exclude reference="UFx-f4-Tqd"/>
-                                <exclude reference="EIW-jS-E68"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -78,12 +79,12 @@
                                 <include reference="Hax-Jc-ggL"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="EIW-jS-E68"/>
                                 <include reference="4if-Lg-CzR"/>
                                 <include reference="EHY-mk-FzH"/>
                                 <include reference="8Cs-FG-Rp4"/>
                                 <include reference="Agg-lf-dqJ"/>
                                 <include reference="UFx-f4-Tqd"/>
-                                <include reference="EIW-jS-E68"/>
                             </mask>
                         </variation>
                     </view>

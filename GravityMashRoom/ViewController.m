@@ -16,11 +16,20 @@
 @property (nonatomic, strong) UICollisionBehavior *collisionBehavior;
 @property (nonatomic, strong) UIDynamicItemBehavior *itemBehavior;
 @property (nonatomic,strong) UIImageView *imageview;
+- (IBAction)selectGuanKa:(id)sender;
 
 - (IBAction)gameStart:(id)sender;
 @end
 
 @implementation ViewController
+{
+    float elaticity;
+    float friction;
+    float resistance;
+
+
+
+}
 @synthesize imageview;
 
 - (void)viewDidLoad {
@@ -45,9 +54,13 @@
     
     self.itemBehavior = [[UIDynamicItemBehavior alloc] initWithItems:nil];
     
-    self.itemBehavior.elasticity = 0.9; //弹力系数
-    self.itemBehavior.friction = 0.5;   //摩擦系数
-    self.itemBehavior.resistance = 0.5 ;//阻力
+    elaticity = 0.5;
+    friction = 0.5;
+    resistance = 0.5;
+    
+    self.itemBehavior.elasticity = elaticity; //弹力系数
+    self.itemBehavior.friction = friction;   //摩擦系数
+    self.itemBehavior.resistance = resistance ;//阻力
     //添加动力行为
     [self.animator addBehavior:self.gravityBeahavior];
     [self.animator addBehavior:self.collisionBehavior];
@@ -92,25 +105,133 @@
 
 
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"提示" message:@"请选择关卡" preferredStyle:UIAlertControllerStyleActionSheet];
-    UIAlertAction *first = [UIAlertAction actionWithTitle:@"第一关" style:UIAlertActionStyleDefault handler:nil];
-    UIAlertAction *second = [UIAlertAction actionWithTitle:@"第二关" style:UIAlertActionStyleDefault handler:nil];
-    UIAlertAction *third =  [UIAlertAction actionWithTitle:@"第三关" style:UIAlertActionStyleDefault handler:nil];
+    UIAlertAction *first = [UIAlertAction actionWithTitle:@"第一关" style:UIAlertActionStyleDefault handler:^(UIAlertAction *acion){
+        
+        elaticity = 0.5;
+        friction = 0.5;
+        resistance = 0.5;
+        
+        self.itemBehavior.elasticity = elaticity; //弹力系数
+        self.itemBehavior.friction = friction;   //摩擦系数
+        self.itemBehavior.resistance = resistance ;//阻力
+        
+    }
+];
+    UIAlertAction *second = [UIAlertAction actionWithTitle:@"第二关" style:UIAlertActionStyleDefault handler:^(UIAlertAction *acion){
+        
+        elaticity = 0.9;
+        friction = 0.5;
+        resistance = 0.5;
+        
+        self.itemBehavior.elasticity = elaticity; //弹力系数
+        self.itemBehavior.friction = friction;   //摩擦系数
+        self.itemBehavior.resistance = resistance ;//阻力
+        
+    }
+];
+    UIAlertAction *third =  [UIAlertAction actionWithTitle:@"第三关" style:UIAlertActionStyleDefault handler:^(UIAlertAction *acion){
+        
+        elaticity = 0.4;
+        friction = 0.5;
+        resistance = 0.5;
+        
+        self.itemBehavior.elasticity = elaticity; //弹力系数
+        self.itemBehavior.friction = friction;   //摩擦系数
+        self.itemBehavior.resistance = resistance ;//阻力
+        
+    }
+];
+    UIAlertAction *four = [UIAlertAction actionWithTitle:@"第四关" style:UIAlertActionStyleDefault handler:^(UIAlertAction *acion){
+        
+        elaticity = 1.5;
+        friction = 0.5;
+        resistance = 0.5;
+        
+        self.itemBehavior.elasticity = elaticity; //弹力系数
+        self.itemBehavior.friction = friction;   //摩擦系数
+        self.itemBehavior.resistance = resistance ;//阻力
+
+    
+    }];
     [alertController addAction:first];
     [alertController addAction:second];
     [alertController addAction:third];
+    [alertController addAction:four];
     [self presentViewController:alertController animated:YES completion:nil];
 
 
 
 }
+- (IBAction)selectGuanKa:(id)sender {
+    
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"提示" message:@"请选择关卡" preferredStyle:UIAlertControllerStyleActionSheet];
+    UIAlertAction *first = [UIAlertAction actionWithTitle:@"第一关" style:UIAlertActionStyleDefault handler:^(UIAlertAction *acion){
+        
+        elaticity = 0.5;
+        friction = 0.5;
+        resistance = 0.5;
+        
+        self.itemBehavior.elasticity = elaticity; //弹力系数
+        self.itemBehavior.friction = friction;   //摩擦系数
+        self.itemBehavior.resistance = resistance ;//阻力
+        
+    }
+                            ];
+    UIAlertAction *second = [UIAlertAction actionWithTitle:@"第二关" style:UIAlertActionStyleDefault handler:^(UIAlertAction *acion){
+        
+        elaticity = 0.9;
+        friction = 0.5;
+        resistance = 0.5;
+        
+        self.itemBehavior.elasticity = elaticity; //弹力系数
+        self.itemBehavior.friction = friction;   //摩擦系数
+        self.itemBehavior.resistance = resistance ;//阻力
+        
+    }
+                             ];
+    UIAlertAction *third =  [UIAlertAction actionWithTitle:@"第三关" style:UIAlertActionStyleDefault handler:^(UIAlertAction *acion){
+        
+        elaticity = 0.4;
+        friction = 0.5;
+        resistance = 0.5;
+        
+        self.itemBehavior.elasticity = elaticity; //弹力系数
+        self.itemBehavior.friction = friction;   //摩擦系数
+        self.itemBehavior.resistance = resistance ;//阻力
+        
+    }
+                             ];
+    UIAlertAction *four = [UIAlertAction actionWithTitle:@"第四关" style:UIAlertActionStyleDefault handler:^(UIAlertAction *acion){
+        
+        elaticity = 1.5;
+        friction = 0.5;
+        resistance = 0.5;
+        
+        self.itemBehavior.elasticity = elaticity; //弹力系数
+        self.itemBehavior.friction = friction;   //摩擦系数
+        self.itemBehavior.resistance = resistance ;//阻力
+        
+        
+    }];
+    [alertController addAction:first];
+    [alertController addAction:second];
+    [alertController addAction:third];
+    [alertController addAction:four];
+    [self presentViewController:alertController animated:YES completion:nil];
+    
+
+}
+
 - (IBAction)gameStart:(id)sender {
     
-    
-    
-//    [[self.view subviews] makeObjectsPerformSelector:@selector(removeFromSuperview)];
+    [self.view reloadInputViews];
+   
+    [[self.view subviews] makeObjectsPerformSelector:@selector(removeFromSuperview)];
    // [imageview removeFromSuperview];
    // [self.view reloadInputViews];
    // [[self.view subviews] makeObjectsPerformSelector:@selector(removeFromSuperview) withObject:self];
+    
+    
     
     
     }
